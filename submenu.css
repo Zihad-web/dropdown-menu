@@ -1,0 +1,38 @@
+.sub-menu {
+  min-width: 210px;
+  border: none;
+  border-radius: 2px;
+  border-left: 1px solid rgba(128, 128, 128, 0.299);
+  border-top: 3px solid #ef4a23;
+  padding-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.152);
+}
+.gadget {
+  left: auto;
+  right: 0;
+}
+.sub-menu > li {
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 6px 8px;
+  display: block;
+  transition: 0.3s;
+}
+.sub-menu li:hover {
+  background-color: #ef4a23;
+}
+.sub-menu li:hover a {
+  color: white;
+}
+.has-sub-menu:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
